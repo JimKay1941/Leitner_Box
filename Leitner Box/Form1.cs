@@ -20,8 +20,8 @@ namespace Leitner_Box
     {
         #region Fields
 
-        XElement selectedElement;
-        bool EnableAutoComplete;
+        private XElement selectedElement;
+        private bool EnableAutoComplete;
 
         #endregion
 
@@ -34,7 +34,7 @@ namespace Leitner_Box
 
         #region shortcut buttons
 
-        void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.S && e.Control && buttonShowAnswer.Enabled)
             {
@@ -52,7 +52,7 @@ namespace Leitner_Box
 
         #endregion
 
-        string ComputePersianDate(DateTime dateTime)
+        private string ComputePersianDate(DateTime dateTime)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
                 return "";
             }
         }
@@ -77,10 +77,10 @@ namespace Leitner_Box
 
         #region AutoComplete Events
 
-        bool questionIsAvcitve = false;
-        bool answerIsActive = false;
+        private bool questionIsAvcitve = false;
+        private bool answerIsActive = false;
 
-        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             EnableAutoComplete = true;
             TextBox textBox = sender as TextBox;
@@ -108,39 +108,42 @@ namespace Leitner_Box
             }
         }
 
-        private void textBoxKeyDown(object sender, KeyEventArgs e)
+        private void TextBoxKeyDown(object sender, KeyEventArgs e)
         {
             TextBox textBox = sender as TextBox;
             if (e.Control && e.KeyCode == Keys.A)
             {
-                textBox.SelectAll();
+                textBox?.SelectAll();
             }
-            else if (e.KeyCode == Keys.Escape)
+            else switch (e.KeyCode)
             {
-                listBoxAutoComplete.Visible = false;
-            }
-            else if (e.KeyCode == Keys.Down && listBoxAutoComplete.Visible)
-            {
-                try { listBoxAutoComplete.SelectedIndex++; }
-                catch { }
-            }
-            else if (e.KeyCode == Keys.Up && listBoxAutoComplete.Visible)
-            {
-                try { listBoxAutoComplete.SelectedIndex--; }
-                catch { }
+                case Keys.Escape:
+                    listBoxAutoComplete.Visible = false;
+                    break;
+                case Keys.Down when listBoxAutoComplete.Visible:
+                    try { listBoxAutoComplete.SelectedIndex++; }
+                    catch { }
+
+                    break;
+
+                case Keys.Up when listBoxAutoComplete.Visible:
+                    try { listBoxAutoComplete.SelectedIndex--; }
+                    catch { }
+
+                    break;
             }
         }
 
-        private void textBox_Enter(object sender, EventArgs e)
+        private void TextBox_Enter(object sender, EventArgs e)
         {
             labelAddQuestionMessage.Text = "";
             labelAnswerToQuestionMessage.Text = "";
             labelSearchMessage.Text = "";
-            (sender as TextBox).SelectAll();
+            ((TextBox) sender).SelectAll();
             listBoxAutoComplete.Visible = false;
         }
 
-        void listBoxAutoComplete_DoubleClick(object sender, EventArgs e)
+        private void ListBoxAutoComplete_DoubleClick(object sender, EventArgs e)
         {
             try
             {
@@ -168,7 +171,7 @@ namespace Leitner_Box
 
         #region Messages
 
-        void error(ref StackFrame file_info, string errorMassage)
+        private void Error(ref StackFrame file_info, string errorMassage)
         {
             try
             {
@@ -180,7 +183,7 @@ namespace Leitner_Box
             catch { }
         }
 
-        void successful(string title, string message)
+        public void Successful(string title, string message)
         {
             try
             {
@@ -235,11 +238,11 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
-        void addNodesToBox1()
+        private void addNodesToBox1()
         {
             treeView1.Nodes[0].Nodes.Clear();
             var questions = from q in Variables.xDocument.Descendants("Box")
@@ -254,7 +257,7 @@ namespace Leitner_Box
             }
         }
 
-        void addNodesToBox2_3_4_5()
+        private void addNodesToBox2_3_4_5()
         {
             int j = 0;
             for (int i = 1; i < 5; i++)
@@ -285,7 +288,7 @@ namespace Leitner_Box
             }
         }
 
-        void loadXML()
+        private void loadXML()
         {
             try
             {
@@ -307,13 +310,13 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
                 treeView1.Enabled = tabControl1.Enabled = false;
                 timer1.Stop();
             }
         }
 
-        void ApplySetting()
+        private void ApplySetting()
         {
             try
             {
@@ -347,11 +350,11 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
-        void RightToLeftQuestion()
+        private void RightToLeftQuestion()
         {
             ToolStripMenuItemLeftToRightQuestion.Checked = false;
             ToolStripMenuItemRightToLeftQuestion.Checked = true;
@@ -361,7 +364,7 @@ namespace Leitner_Box
             textBoxSearchQuestion.RightToLeft = RightToLeft.Yes;
         }
 
-        void LeftToRightQuestion()
+        private void LeftToRightQuestion()
         {
             ToolStripMenuItemLeftToRightQuestion.Checked = true;
             ToolStripMenuItemRightToLeftQuestion.Checked = false;
@@ -371,7 +374,7 @@ namespace Leitner_Box
             textBoxSearchQuestion.RightToLeft = RightToLeft.No;
         }
 
-        void RightToLeftAnswer()
+        private void RightToLeftAnswer()
         {
             ToolStripMenuItemRightToLeftAnswer.Checked = true;
             ToolStripMenuItemLeftToRightAnswer.Checked = false;
@@ -381,7 +384,7 @@ namespace Leitner_Box
             textBoxSearchAnswer.RightToLeft = RightToLeft.Yes;
         }
 
-        void LeftToRightAnswer()
+        private void LeftToRightAnswer()
         {
             ToolStripMenuItemRightToLeftAnswer.Checked = false;
             ToolStripMenuItemLeftToRightAnswer.Checked = true;
@@ -400,7 +403,7 @@ namespace Leitner_Box
         /// <summary>
         /// Adds an element to the xml file
         /// </summary>
-        bool addToXMLAndTreeView(string boxID, string partID, string newQuestion, string newAnswer, string date, bool selectDestinationTreeNode)
+        private bool addToXMLAndTreeView(string boxID, string partID, string newQuestion, string newAnswer, string date, bool selectDestinationTreeNode)
         {
             try
             {
@@ -478,7 +481,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
                 return false;
             }
         }
@@ -486,7 +489,7 @@ namespace Leitner_Box
         /// <summary>
         /// Deletes an element from xml file
         /// </summary>
-        bool deleteFromXMLAndTreeView(string wordID)
+        private bool deleteFromXMLAndTreeView(string wordID)
         {
             try
             {
@@ -501,7 +504,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
                 return false;
             }
         }
@@ -578,7 +581,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -616,22 +619,22 @@ namespace Leitner_Box
 
                 if (textBoxNewQuestion.Text.Trim() == "")
                 {
-                    errorProvider1.SetError(textBoxNewQuestion, "Please fill in this textbox");
+                    errorProvider1.SetError(textBoxNewQuestion, @"Please fill in this textbox");
                     return;
                 }
                 else if (textBoxNewAnswer.Text.Trim() == "")
                 {
-                    errorProvider1.SetError(textBoxNewAnswer, "Please fill in this textbox");
+                    errorProvider1.SetError(textBoxNewAnswer, @"Please fill in this textbox");
                     return;
                 }
 
-                var exist = (from q in Variables.xDocument.Descendants("Word")
-                             where q.Attribute("Question").Value.ToLower() == textBoxNewQuestion.Text.Trim().ToLower()
+                var exist = (from q in Variables.xDocument.Descendants(@"Word")
+                             where q.Attribute(@"Question").Value.ToLower() == textBoxNewQuestion.Text.Trim().ToLower()
                              select q).Count();
 
                 if (exist > 0)
                 {
-                    errorProvider1.SetError(this.textBoxNewQuestion, "There is a same question in the Leitner Box");
+                    errorProvider1.SetError(this.textBoxNewQuestion, @"There is a same question in the Leitner Box");
                     return;
                 }
                 ////////////////////////////////////
@@ -646,21 +649,21 @@ namespace Leitner_Box
 
                 if (!addToXMLAndTreeView(boxID, partID, textBoxNewQuestion.Text.Trim(), textBoxNewAnswer.Text.Trim(), DateTime.Now.ToString().Replace("ب.ظ", "PM").Replace("ق.ظ", "AM"), true))
                 {
-                    labelAddQuestionMessage.Text = "Error in adding data to XML file";
+                    labelAddQuestionMessage.Text = @"Error in adding data to XML file";
                     return;
                 }
 
                 if (partID != "")
-                    labelAddQuestionMessage.Text = "The question added to Box " + boxID + " -> " + "Part " + partID + " successfully";
+                    labelAddQuestionMessage.Text = @"The question was added to Box " + boxID + " -> " + "Part " + partID + " successfully";
                 else if (boxID == "DataBase")
-                    labelAddQuestionMessage.Text = "The question added to " + boxID + " successfully";
+                    labelAddQuestionMessage.Text = @"The question was added to " + boxID + " successfully";
                 else
-                    labelAddQuestionMessage.Text = "The question added to Box " + boxID + " successfully";
+                    labelAddQuestionMessage.Text = @"The question was added to Box " + boxID + " successfully";
             }
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -668,23 +671,23 @@ namespace Leitner_Box
         {
             try
             {
-                if (MessageBox.Show("Are you sure ?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
+                if (MessageBox.Show(@"Are you sure ?", @"Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 
-                string question = this.selectedElement.Attribute("Question").Value;
-                string id = this.selectedElement.Attribute("ID").Value;
+                string question = this.selectedElement.Attribute(@"Question").Value;
+                string id = this.selectedElement.Attribute(@"ID").Value;
 
                 this.selectedElement.Remove();
 
                 Variables.xDocument.Save(Variables.xmlFileName);
 
-                treeView1.Nodes.Find("Word" + id, true).First().Remove();
+                treeView1.Nodes.Find(@"Word" + id, true).First().Remove();
 
-                labelAnswerToQuestionMessage.Text = "The question deleted successfully";
+                labelAnswerToQuestionMessage.Text = @"The question was deleted successfully";
             }
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -714,12 +717,12 @@ namespace Leitner_Box
 
                 Variables.xDocument.Save(Variables.xmlFileName);
 
-                labelAnswerToQuestionMessage.Text = "The changes saved successfully";
+                labelAnswerToQuestionMessage.Text = @"The changes saved successfully";
             }
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -751,13 +754,13 @@ namespace Leitner_Box
                 deleteFromXMLAndTreeView(wordID);
                 addToXMLAndTreeView("1", "", question, answer, date, false);
 
-                labelAnswerToQuestionMessage.Text = "The question moved to Box1";
+                labelAnswerToQuestionMessage.Text = @"The question moved to Box1";
             }
             catch (Exception ex)
             {
                 labelAnswerToQuestionMessage.Text = "";
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -783,7 +786,7 @@ namespace Leitner_Box
                         boxID = "1";
                         addToXMLAndTreeView("2", "2", question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
-                        labelAnswerToQuestionMessage.Text = "The question moved to Bax2 Part2";
+                        labelAnswerToQuestionMessage.Text = @"The question moved to Box2 Part2";
                         break;
 
                     ////////////////////////////////
@@ -791,28 +794,28 @@ namespace Leitner_Box
                     case "2":
                         addToXMLAndTreeView("3", "5", question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
-                        labelAnswerToQuestionMessage.Text = "The question moved to Bax3 Part5";
+                        labelAnswerToQuestionMessage.Text = @"The question moved to Box3 Part5";
                         break;
 
                     ////////////////////////////////
                     case "3":
                         addToXMLAndTreeView("4", "8", question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
-                        labelAnswerToQuestionMessage.Text = "The question moved to Bax4 Part8";
+                        labelAnswerToQuestionMessage.Text = @"The question moved to Box4 Part8";
                         break;
 
                     ////////////////////////////////
                     case "4":
                         addToXMLAndTreeView("5", "14", question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
-                        labelAnswerToQuestionMessage.Text = "The question moved to Bax5 Part14";
+                        labelAnswerToQuestionMessage.Text = @"The question moved to Box5 Part14";
                         break;
 
                     ////////////////////////////////
                     case "5":
                         addToXMLAndTreeView("DataBase", "", question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
-                        labelAnswerToQuestionMessage.Text = "The question moved to Data Base";
+                        labelAnswerToQuestionMessage.Text = @"The question moved to Data Base";
                         break;
 
                     default:
@@ -824,7 +827,7 @@ namespace Leitner_Box
             {
                 labelAnswerToQuestionMessage.Text = "Error";
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -849,7 +852,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -881,7 +884,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -916,7 +919,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -930,7 +933,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1043,7 +1046,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1318,7 +1321,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1358,7 +1361,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1383,14 +1386,14 @@ namespace Leitner_Box
                 }
                 Variables.xDocument.Save(Variables.xmlFileName);
                 loadXML();
-                successful("Optimization", "The XML file has been optimized successfully");
+                Successful("Optimization", "The XML file has been optimized successfully");
                 this.Cursor = Cursors.Default;
             }
             catch (Exception ex)
             {
                 this.Cursor = Cursors.Default;
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1413,7 +1416,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1432,7 +1435,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1450,7 +1453,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1468,7 +1471,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1487,7 +1490,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1506,7 +1509,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1520,13 +1523,13 @@ namespace Leitner_Box
                 elements = from q in Variables.xDocument.Descendants("Word") select q;
                 exportWords(ref elements, saveFileDialog1.FileName);
                 this.Cursor = Cursors.Default;
-                successful("File Saving", "The file has been saved successfully");
+                Successful("File Saving", "The file has been saved successfully");
             }
             catch (Exception ex)
             {
                 this.Cursor = Cursors.Default;
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1554,7 +1557,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1601,7 +1604,7 @@ namespace Leitner_Box
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
@@ -1638,16 +1641,16 @@ namespace Leitner_Box
                 Variables.xDocument.Save(Variables.xmlFileName);
 
                 Form1_Shown(null, null);
-                successful("Shift", "Leitner Box has been updated");
+                Successful("Shift", "Leitner Box has been updated");
             }
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
-        void toolStripMenuItemExport_Click(object sender, EventArgs e)
+        private void toolStripMenuItemExport_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1670,16 +1673,16 @@ namespace Leitner_Box
 
                 exportWords(ref elements, saveFileDialog1.FileName);
 
-                successful("File Saving", "The file has been saved successfully");
+                Successful("File Saving", "The file has been saved successfully");
             }
             catch (Exception ex)
             {
                 StackFrame file_info = new StackFrame(true);
-                error(ref file_info, ex.Message);
+                Error(ref file_info, ex.Message);
             }
         }
 
-        void exportWords(ref IEnumerable<XElement> elements, string filename)
+        private void exportWords(ref IEnumerable<XElement> elements, string filename)
         {
             using (StreamWriter sw = new StreamWriter(filename))
             {

@@ -692,7 +692,7 @@
             this.listBoxAutoComplete.Sorted = true;
             this.listBoxAutoComplete.TabIndex = 0;
             this.listBoxAutoComplete.Visible = false;
-            this.listBoxAutoComplete.DoubleClick += new System.EventHandler(this.listBoxAutoComplete_DoubleClick);
+            this.listBoxAutoComplete.DoubleClick += new System.EventHandler(this.ListBoxAutoComplete_DoubleClick);
             // 
             // label6
             // 
@@ -798,10 +798,10 @@
             this.textBoxNewAnswer.Size = new System.Drawing.Size(435, 126);
             this.textBoxNewAnswer.TabIndex = 2;
             this.textBoxNewAnswer.TextChanged += new System.EventHandler(this.textBoxNewAnswer_TextChanged);
-            this.textBoxNewAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
+            this.textBoxNewAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             this.textBoxNewAnswer.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
-            this.textBoxNewAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
-            this.textBoxNewAnswer.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxNewAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
+            this.textBoxNewAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // label3
             // 
@@ -825,10 +825,10 @@
             this.textBoxNewQuestion.Size = new System.Drawing.Size(435, 126);
             this.textBoxNewQuestion.TabIndex = 1;
             this.textBoxNewQuestion.TextChanged += new System.EventHandler(this.textBoxNewQuestion_TextChanged);
-            this.textBoxNewQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
+            this.textBoxNewQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             this.textBoxNewQuestion.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
-            this.textBoxNewQuestion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
-            this.textBoxNewQuestion.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxNewQuestion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
+            this.textBoxNewQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // label2
             // 
@@ -970,8 +970,8 @@
             this.textBoxAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxAnswer.Size = new System.Drawing.Size(435, 126);
             this.textBoxAnswer.TabIndex = 10;
-            this.textBoxAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
-            this.textBoxAnswer.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // label9
             // 
@@ -995,8 +995,8 @@
             this.textBoxQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxQuestion.Size = new System.Drawing.Size(435, 126);
             this.textBoxQuestion.TabIndex = 8;
-            this.textBoxQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
-            this.textBoxQuestion.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // labelRegDate
             // 
@@ -1158,8 +1158,8 @@
             this.textBoxSearchAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxSearchAnswer.Size = new System.Drawing.Size(281, 141);
             this.textBoxSearchAnswer.TabIndex = 7;
-            this.textBoxSearchAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
-            this.textBoxSearchAnswer.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxSearchAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxSearchAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // textBoxSearchQuestion
             // 
@@ -1173,8 +1173,8 @@
             this.textBoxSearchQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxSearchQuestion.Size = new System.Drawing.Size(279, 141);
             this.textBoxSearchQuestion.TabIndex = 6;
-            this.textBoxSearchQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
-            this.textBoxSearchQuestion.Enter += new System.EventHandler(this.textBox_Enter);
+            this.textBoxSearchQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxSearchQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
             // 
             // label1Search
             // 
@@ -1227,7 +1227,7 @@
             this.textBoxSearch.Size = new System.Drawing.Size(569, 26);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
-            this.textBoxSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxKeyDown);
+            this.textBoxSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             // 
             // tabPageStatistics
             // 

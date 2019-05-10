@@ -51,7 +51,7 @@
             this.maskedTextBox1.AllowPromptAsInput = false;
             this.maskedTextBox1.BeepOnError = true;
             this.maskedTextBox1.Location = new System.Drawing.Point(66, 26);
-            this.maskedTextBox1.Mask = "LLLLLLLLLL";
+            this.maskedTextBox1.Mask = "&&&&&&&&&&&&&&&";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.PromptChar = ' ';
             this.maskedTextBox1.ResetOnPrompt = false;
