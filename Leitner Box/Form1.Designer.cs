@@ -29,70 +29,70 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Box 1");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Box 2", new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Box 3", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Part 6", 2, 2);
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Part 7", 2, 2);
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Part 8", 2, 2);
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Box 4", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18});
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Part 6", 2, 2);
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Part 7", 2, 2);
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Part 8", 2, 2);
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Part 9", 2, 2);
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Part 10", 2, 2);
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Part 11", 2, 2);
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Part 12", 2, 2);
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Part 13", 2, 2);
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Part 14", 2, 2);
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Box 5", new System.Windows.Forms.TreeNode[] {
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26,
-            treeNode27,
-            treeNode28,
-            treeNode29,
-            treeNode30,
-            treeNode31,
-            treeNode32,
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Data Base", 1, 1);
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Box 1");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Box 2", new System.Windows.Forms.TreeNode[] {
+            treeNode37,
+            treeNode38});
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Box 3", new System.Windows.Forms.TreeNode[] {
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44});
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("Part 6", 2, 2);
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Part 7", 2, 2);
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Part 8", 2, 2);
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Box 4", new System.Windows.Forms.TreeNode[] {
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53});
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Part 1", 2, 2);
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("Part 2", 2, 2);
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("Part 3", 2, 2);
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("Part 4", 2, 2);
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("Part 5", 2, 2);
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("Part 6", 2, 2);
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("Part 7", 2, 2);
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("Part 8", 2, 2);
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("Part 9", 2, 2);
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("Part 10", 2, 2);
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Part 11", 2, 2);
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Part 12", 2, 2);
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Part 13", 2, 2);
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("Part 14", 2, 2);
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Box 5", new System.Windows.Forms.TreeNode[] {
+            treeNode55,
+            treeNode56,
+            treeNode57,
+            treeNode58,
+            treeNode59,
+            treeNode60,
+            treeNode61,
+            treeNode62,
+            treeNode63,
+            treeNode64,
+            treeNode65,
+            treeNode66,
+            treeNode67,
+            treeNode68});
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Data Base", 1, 1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -163,9 +163,9 @@
             this.textBoxSearchQuestion = new System.Windows.Forms.TextBox();
             this.label1Search = new System.Windows.Forms.Label();
             this.listViewSearch = new System.Windows.Forms.ListView();
-            this.QuestionColumn = new System.Windows.Forms.ColumnHeader();
-            this.AnswerColumn = new System.Windows.Forms.ColumnHeader();
-            this.DateColumn = new System.Windows.Forms.ColumnHeader();
+            this.QuestionColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.AnswerColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DateColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.tabPageStatistics = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
@@ -191,9 +191,9 @@
             this.label3Statistics = new System.Windows.Forms.Label();
             this.labelStatisticsBox1 = new System.Windows.Forms.Label();
             this.label1Statistics = new System.Windows.Forms.Label();
-            this.columnHeaderQuestion = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderAnswer = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderDate = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderQuestion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderAnswer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -238,10 +238,11 @@
             this.ToolStripMenuItemExport = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -277,8 +278,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
             this.splitContainer1.Panel2MinSize = 140;
-            this.splitContainer1.Size = new System.Drawing.Size(881, 643);
-            this.splitContainer1.SplitterDistance = 242;
+            this.splitContainer1.Size = new System.Drawing.Size(1464, 643);
+            this.splitContainer1.SplitterDistance = 402;
             this.splitContainer1.SplitterWidth = 10;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -294,148 +295,148 @@
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Box1";
-            treeNode1.Text = "Box 1";
-            treeNode2.ImageIndex = 2;
-            treeNode2.Name = "Box2Part1";
-            treeNode2.SelectedImageIndex = 2;
-            treeNode2.Text = "Part 1";
-            treeNode3.ImageIndex = 2;
-            treeNode3.Name = "Box2Part2";
-            treeNode3.SelectedImageIndex = 2;
-            treeNode3.Text = "Part 2";
-            treeNode4.Name = "Box2";
-            treeNode4.Text = "Box 2";
-            treeNode5.ImageIndex = 2;
-            treeNode5.Name = "Box3Part1";
-            treeNode5.SelectedImageIndex = 2;
-            treeNode5.Text = "Part 1";
-            treeNode6.ImageIndex = 2;
-            treeNode6.Name = "Box3Part2";
-            treeNode6.SelectedImageIndex = 2;
-            treeNode6.Text = "Part 2";
-            treeNode7.ImageIndex = 2;
-            treeNode7.Name = "Box3Part3";
-            treeNode7.SelectedImageIndex = 2;
-            treeNode7.Text = "Part 3";
-            treeNode8.ImageIndex = 2;
-            treeNode8.Name = "Box3Part4";
-            treeNode8.SelectedImageIndex = 2;
-            treeNode8.Text = "Part 4";
-            treeNode9.ImageIndex = 2;
-            treeNode9.Name = "Box3Part5";
-            treeNode9.SelectedImageIndex = 2;
-            treeNode9.Text = "Part 5";
-            treeNode10.Name = "Box3";
-            treeNode10.Text = "Box 3";
-            treeNode11.ImageIndex = 2;
-            treeNode11.Name = "Box4Part1";
-            treeNode11.SelectedImageIndex = 2;
-            treeNode11.Text = "Part 1";
-            treeNode12.ImageIndex = 2;
-            treeNode12.Name = "Box4Part2";
-            treeNode12.SelectedImageIndex = 2;
-            treeNode12.Text = "Part 2";
-            treeNode13.ImageIndex = 2;
-            treeNode13.Name = "Box4Part3";
-            treeNode13.SelectedImageIndex = 2;
-            treeNode13.Text = "Part 3";
-            treeNode14.ImageIndex = 2;
-            treeNode14.Name = "Box4Part4";
-            treeNode14.SelectedImageIndex = 2;
-            treeNode14.Text = "Part 4";
-            treeNode15.ImageIndex = 2;
-            treeNode15.Name = "Box4Part5";
-            treeNode15.SelectedImageIndex = 2;
-            treeNode15.Text = "Part 5";
-            treeNode16.ImageIndex = 2;
-            treeNode16.Name = "Box4Part6";
-            treeNode16.SelectedImageIndex = 2;
-            treeNode16.Text = "Part 6";
-            treeNode17.ImageIndex = 2;
-            treeNode17.Name = "Box4Part7";
-            treeNode17.SelectedImageIndex = 2;
-            treeNode17.Text = "Part 7";
-            treeNode18.ImageIndex = 2;
-            treeNode18.Name = "Box4Part8";
-            treeNode18.SelectedImageIndex = 2;
-            treeNode18.Text = "Part 8";
-            treeNode19.Name = "Box4";
-            treeNode19.Text = "Box 4";
-            treeNode20.ImageIndex = 2;
-            treeNode20.Name = "Box5Part1";
-            treeNode20.SelectedImageIndex = 2;
-            treeNode20.Text = "Part 1";
-            treeNode21.ImageIndex = 2;
-            treeNode21.Name = "Box5Part2";
-            treeNode21.SelectedImageIndex = 2;
-            treeNode21.Text = "Part 2";
-            treeNode22.ImageIndex = 2;
-            treeNode22.Name = "Box5Part3";
-            treeNode22.SelectedImageIndex = 2;
-            treeNode22.Text = "Part 3";
-            treeNode23.ImageIndex = 2;
-            treeNode23.Name = "Box5Part4";
-            treeNode23.SelectedImageIndex = 2;
-            treeNode23.Text = "Part 4";
-            treeNode24.ImageIndex = 2;
-            treeNode24.Name = "Box5Part5";
-            treeNode24.SelectedImageIndex = 2;
-            treeNode24.Text = "Part 5";
-            treeNode25.ImageIndex = 2;
-            treeNode25.Name = "Box5Part6";
-            treeNode25.SelectedImageIndex = 2;
-            treeNode25.Text = "Part 6";
-            treeNode26.ImageIndex = 2;
-            treeNode26.Name = "Box5Part7";
-            treeNode26.SelectedImageIndex = 2;
-            treeNode26.Text = "Part 7";
-            treeNode27.ImageIndex = 2;
-            treeNode27.Name = "Box5Part8";
-            treeNode27.SelectedImageIndex = 2;
-            treeNode27.Text = "Part 8";
-            treeNode28.ImageIndex = 2;
-            treeNode28.Name = "Box5Part9";
-            treeNode28.SelectedImageIndex = 2;
-            treeNode28.Text = "Part 9";
-            treeNode29.ImageIndex = 2;
-            treeNode29.Name = "Box5Part10";
-            treeNode29.SelectedImageIndex = 2;
-            treeNode29.Text = "Part 10";
-            treeNode30.ImageIndex = 2;
-            treeNode30.Name = "Box5Part11";
-            treeNode30.SelectedImageIndex = 2;
-            treeNode30.Text = "Part 11";
-            treeNode31.ImageIndex = 2;
-            treeNode31.Name = "Box5Part12";
-            treeNode31.SelectedImageIndex = 2;
-            treeNode31.Text = "Part 12";
-            treeNode32.ImageIndex = 2;
-            treeNode32.Name = "Box5Part13";
-            treeNode32.SelectedImageIndex = 2;
-            treeNode32.Text = "Part 13";
-            treeNode33.ImageIndex = 2;
-            treeNode33.Name = "Box5Part14";
-            treeNode33.SelectedImageIndex = 2;
-            treeNode33.Text = "Part 14";
-            treeNode34.Name = "Box5";
-            treeNode34.Text = "Box 5";
-            treeNode35.ImageIndex = 1;
-            treeNode35.Name = "DataBase";
-            treeNode35.SelectedImageIndex = 1;
-            treeNode35.Text = "Data Base";
+            treeNode36.Name = "Box1";
+            treeNode36.Text = "Box 1";
+            treeNode37.ImageIndex = 2;
+            treeNode37.Name = "Box2Part1";
+            treeNode37.SelectedImageIndex = 2;
+            treeNode37.Text = "Part 1";
+            treeNode38.ImageIndex = 2;
+            treeNode38.Name = "Box2Part2";
+            treeNode38.SelectedImageIndex = 2;
+            treeNode38.Text = "Part 2";
+            treeNode39.Name = "Box2";
+            treeNode39.Text = "Box 2";
+            treeNode40.ImageIndex = 2;
+            treeNode40.Name = "Box3Part1";
+            treeNode40.SelectedImageIndex = 2;
+            treeNode40.Text = "Part 1";
+            treeNode41.ImageIndex = 2;
+            treeNode41.Name = "Box3Part2";
+            treeNode41.SelectedImageIndex = 2;
+            treeNode41.Text = "Part 2";
+            treeNode42.ImageIndex = 2;
+            treeNode42.Name = "Box3Part3";
+            treeNode42.SelectedImageIndex = 2;
+            treeNode42.Text = "Part 3";
+            treeNode43.ImageIndex = 2;
+            treeNode43.Name = "Box3Part4";
+            treeNode43.SelectedImageIndex = 2;
+            treeNode43.Text = "Part 4";
+            treeNode44.ImageIndex = 2;
+            treeNode44.Name = "Box3Part5";
+            treeNode44.SelectedImageIndex = 2;
+            treeNode44.Text = "Part 5";
+            treeNode45.Name = "Box3";
+            treeNode45.Text = "Box 3";
+            treeNode46.ImageIndex = 2;
+            treeNode46.Name = "Box4Part1";
+            treeNode46.SelectedImageIndex = 2;
+            treeNode46.Text = "Part 1";
+            treeNode47.ImageIndex = 2;
+            treeNode47.Name = "Box4Part2";
+            treeNode47.SelectedImageIndex = 2;
+            treeNode47.Text = "Part 2";
+            treeNode48.ImageIndex = 2;
+            treeNode48.Name = "Box4Part3";
+            treeNode48.SelectedImageIndex = 2;
+            treeNode48.Text = "Part 3";
+            treeNode49.ImageIndex = 2;
+            treeNode49.Name = "Box4Part4";
+            treeNode49.SelectedImageIndex = 2;
+            treeNode49.Text = "Part 4";
+            treeNode50.ImageIndex = 2;
+            treeNode50.Name = "Box4Part5";
+            treeNode50.SelectedImageIndex = 2;
+            treeNode50.Text = "Part 5";
+            treeNode51.ImageIndex = 2;
+            treeNode51.Name = "Box4Part6";
+            treeNode51.SelectedImageIndex = 2;
+            treeNode51.Text = "Part 6";
+            treeNode52.ImageIndex = 2;
+            treeNode52.Name = "Box4Part7";
+            treeNode52.SelectedImageIndex = 2;
+            treeNode52.Text = "Part 7";
+            treeNode53.ImageIndex = 2;
+            treeNode53.Name = "Box4Part8";
+            treeNode53.SelectedImageIndex = 2;
+            treeNode53.Text = "Part 8";
+            treeNode54.Name = "Box4";
+            treeNode54.Text = "Box 4";
+            treeNode55.ImageIndex = 2;
+            treeNode55.Name = "Box5Part1";
+            treeNode55.SelectedImageIndex = 2;
+            treeNode55.Text = "Part 1";
+            treeNode56.ImageIndex = 2;
+            treeNode56.Name = "Box5Part2";
+            treeNode56.SelectedImageIndex = 2;
+            treeNode56.Text = "Part 2";
+            treeNode57.ImageIndex = 2;
+            treeNode57.Name = "Box5Part3";
+            treeNode57.SelectedImageIndex = 2;
+            treeNode57.Text = "Part 3";
+            treeNode58.ImageIndex = 2;
+            treeNode58.Name = "Box5Part4";
+            treeNode58.SelectedImageIndex = 2;
+            treeNode58.Text = "Part 4";
+            treeNode59.ImageIndex = 2;
+            treeNode59.Name = "Box5Part5";
+            treeNode59.SelectedImageIndex = 2;
+            treeNode59.Text = "Part 5";
+            treeNode60.ImageIndex = 2;
+            treeNode60.Name = "Box5Part6";
+            treeNode60.SelectedImageIndex = 2;
+            treeNode60.Text = "Part 6";
+            treeNode61.ImageIndex = 2;
+            treeNode61.Name = "Box5Part7";
+            treeNode61.SelectedImageIndex = 2;
+            treeNode61.Text = "Part 7";
+            treeNode62.ImageIndex = 2;
+            treeNode62.Name = "Box5Part8";
+            treeNode62.SelectedImageIndex = 2;
+            treeNode62.Text = "Part 8";
+            treeNode63.ImageIndex = 2;
+            treeNode63.Name = "Box5Part9";
+            treeNode63.SelectedImageIndex = 2;
+            treeNode63.Text = "Part 9";
+            treeNode64.ImageIndex = 2;
+            treeNode64.Name = "Box5Part10";
+            treeNode64.SelectedImageIndex = 2;
+            treeNode64.Text = "Part 10";
+            treeNode65.ImageIndex = 2;
+            treeNode65.Name = "Box5Part11";
+            treeNode65.SelectedImageIndex = 2;
+            treeNode65.Text = "Part 11";
+            treeNode66.ImageIndex = 2;
+            treeNode66.Name = "Box5Part12";
+            treeNode66.SelectedImageIndex = 2;
+            treeNode66.Text = "Part 12";
+            treeNode67.ImageIndex = 2;
+            treeNode67.Name = "Box5Part13";
+            treeNode67.SelectedImageIndex = 2;
+            treeNode67.Text = "Part 13";
+            treeNode68.ImageIndex = 2;
+            treeNode68.Name = "Box5Part14";
+            treeNode68.SelectedImageIndex = 2;
+            treeNode68.Text = "Part 14";
+            treeNode69.Name = "Box5";
+            treeNode69.Text = "Box 5";
+            treeNode70.ImageIndex = 1;
+            treeNode70.Name = "DataBase";
+            treeNode70.SelectedImageIndex = 1;
+            treeNode70.Text = "Data Base";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode4,
-            treeNode10,
-            treeNode19,
-            treeNode34,
-            treeNode35});
+            treeNode36,
+            treeNode39,
+            treeNode45,
+            treeNode54,
+            treeNode69,
+            treeNode70});
             this.treeView1.SelectedImageIndex = 0;
-            this.treeView1.Size = new System.Drawing.Size(238, 639);
+            this.treeView1.Size = new System.Drawing.Size(398, 639);
             this.treeView1.TabIndex = 1;
-            this.treeView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.treeView1_MouseClick);
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.treeView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.treeView1_MouseClick);
             // 
             // imageList1
             // 
@@ -459,7 +460,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.650831F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.34917F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(625, 639);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1048, 639);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -473,7 +474,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(625, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1048, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -539,20 +540,20 @@
             this.ToolStripMenuItemRightToLeftQuestion,
             this.ToolStripMenuItemLeftToRightQuestion});
             this.questionTextboxesToolStripMenuItem.Name = "questionTextboxesToolStripMenuItem";
-            this.questionTextboxesToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.questionTextboxesToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.questionTextboxesToolStripMenuItem.Text = "Question Textboxes";
             // 
             // ToolStripMenuItemRightToLeftQuestion
             // 
             this.ToolStripMenuItemRightToLeftQuestion.Name = "ToolStripMenuItemRightToLeftQuestion";
-            this.ToolStripMenuItemRightToLeftQuestion.Size = new System.Drawing.Size(163, 24);
+            this.ToolStripMenuItemRightToLeftQuestion.Size = new System.Drawing.Size(162, 24);
             this.ToolStripMenuItemRightToLeftQuestion.Text = "Right To Left";
             this.ToolStripMenuItemRightToLeftQuestion.Click += new System.EventHandler(this.ToolStripMenuItemRightToLeftQuestion_Click);
             // 
             // ToolStripMenuItemLeftToRightQuestion
             // 
             this.ToolStripMenuItemLeftToRightQuestion.Name = "ToolStripMenuItemLeftToRightQuestion";
-            this.ToolStripMenuItemLeftToRightQuestion.Size = new System.Drawing.Size(163, 24);
+            this.ToolStripMenuItemLeftToRightQuestion.Size = new System.Drawing.Size(162, 24);
             this.ToolStripMenuItemLeftToRightQuestion.Text = "Left To Right";
             this.ToolStripMenuItemLeftToRightQuestion.Click += new System.EventHandler(this.ToolStripMenuItemLeftToRightQuestion_Click);
             // 
@@ -562,27 +563,27 @@
             this.ToolStripMenuItemRightToLeftAnswer,
             this.ToolStripMenuItemLeftToRightAnswer});
             this.answerTextboxesToolStripMenuItem.Name = "answerTextboxesToolStripMenuItem";
-            this.answerTextboxesToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.answerTextboxesToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.answerTextboxesToolStripMenuItem.Text = "Answer Textboxes";
             // 
             // ToolStripMenuItemRightToLeftAnswer
             // 
             this.ToolStripMenuItemRightToLeftAnswer.Name = "ToolStripMenuItemRightToLeftAnswer";
-            this.ToolStripMenuItemRightToLeftAnswer.Size = new System.Drawing.Size(163, 24);
+            this.ToolStripMenuItemRightToLeftAnswer.Size = new System.Drawing.Size(162, 24);
             this.ToolStripMenuItemRightToLeftAnswer.Text = "Right To Left";
             this.ToolStripMenuItemRightToLeftAnswer.Click += new System.EventHandler(this.ToolStripMenuItemRightToLeftAnswer_Click);
             // 
             // ToolStripMenuItemLeftToRightAnswer
             // 
             this.ToolStripMenuItemLeftToRightAnswer.Name = "ToolStripMenuItemLeftToRightAnswer";
-            this.ToolStripMenuItemLeftToRightAnswer.Size = new System.Drawing.Size(163, 24);
+            this.ToolStripMenuItemLeftToRightAnswer.Size = new System.Drawing.Size(162, 24);
             this.ToolStripMenuItemLeftToRightAnswer.Text = "Left To Right";
             this.ToolStripMenuItemLeftToRightAnswer.Click += new System.EventHandler(this.ToolStripMenuItemLeftToRightAnswer_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(205, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(204, 6);
             // 
             // dateToolStripMenuItem
             // 
@@ -590,7 +591,7 @@
             this.ToolStripMenuItemChristianDate,
             this.ToolStripMenuItemPersianDate});
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
-            this.dateToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.dateToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.dateToolStripMenuItem.Text = "Date";
             // 
             // ToolStripMenuItemChristianDate
@@ -642,7 +643,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(615, 587);
+            this.tabControl1.Size = new System.Drawing.Size(1038, 587);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPageAddQuestions
@@ -665,7 +666,7 @@
             this.tabPageAddQuestions.Margin = new System.Windows.Forms.Padding(5);
             this.tabPageAddQuestions.Name = "tabPageAddQuestions";
             this.tabPageAddQuestions.Padding = new System.Windows.Forms.Padding(5);
-            this.tabPageAddQuestions.Size = new System.Drawing.Size(607, 554);
+            this.tabPageAddQuestions.Size = new System.Drawing.Size(1030, 554);
             this.tabPageAddQuestions.TabIndex = 0;
             this.tabPageAddQuestions.Text = "Add Questions";
             this.tabPageAddQuestions.UseVisualStyleBackColor = true;
@@ -688,7 +689,7 @@
             this.listBoxAutoComplete.Location = new System.Drawing.Point(107, 218);
             this.listBoxAutoComplete.Margin = new System.Windows.Forms.Padding(5);
             this.listBoxAutoComplete.Name = "listBoxAutoComplete";
-            this.listBoxAutoComplete.Size = new System.Drawing.Size(435, 164);
+            this.listBoxAutoComplete.Size = new System.Drawing.Size(913, 164);
             this.listBoxAutoComplete.Sorted = true;
             this.listBoxAutoComplete.TabIndex = 0;
             this.listBoxAutoComplete.Visible = false;
@@ -795,13 +796,13 @@
             this.textBoxNewAnswer.Multiline = true;
             this.textBoxNewAnswer.Name = "textBoxNewAnswer";
             this.textBoxNewAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxNewAnswer.Size = new System.Drawing.Size(435, 126);
+            this.textBoxNewAnswer.Size = new System.Drawing.Size(912, 126);
             this.textBoxNewAnswer.TabIndex = 2;
             this.textBoxNewAnswer.TextChanged += new System.EventHandler(this.textBoxNewAnswer_TextChanged);
-            this.textBoxNewAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
-            this.textBoxNewAnswer.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
-            this.textBoxNewAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
             this.textBoxNewAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNewAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxNewAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
+            this.textBoxNewAnswer.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
             // 
             // label3
             // 
@@ -822,13 +823,13 @@
             this.textBoxNewQuestion.Multiline = true;
             this.textBoxNewQuestion.Name = "textBoxNewQuestion";
             this.textBoxNewQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxNewQuestion.Size = new System.Drawing.Size(435, 126);
+            this.textBoxNewQuestion.Size = new System.Drawing.Size(912, 126);
             this.textBoxNewQuestion.TabIndex = 1;
             this.textBoxNewQuestion.TextChanged += new System.EventHandler(this.textBoxNewQuestion_TextChanged);
-            this.textBoxNewQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
-            this.textBoxNewQuestion.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
-            this.textBoxNewQuestion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
             this.textBoxNewQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNewQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxNewQuestion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
+            this.textBoxNewQuestion.Leave += new System.EventHandler(this.textBoxNewQuestion_Or_NewAnswer_Leave);
             // 
             // label2
             // 
@@ -871,7 +872,7 @@
             this.tabPageExplorer.Margin = new System.Windows.Forms.Padding(5);
             this.tabPageExplorer.Name = "tabPageExplorer";
             this.tabPageExplorer.Padding = new System.Windows.Forms.Padding(5);
-            this.tabPageExplorer.Size = new System.Drawing.Size(607, 554);
+            this.tabPageExplorer.Size = new System.Drawing.Size(1030, 554);
             this.tabPageExplorer.TabIndex = 1;
             this.tabPageExplorer.Text = "Answer to Questions";
             this.tabPageExplorer.UseVisualStyleBackColor = true;
@@ -891,7 +892,7 @@
             // buttonDelete1
             // 
             this.buttonDelete1.Enabled = false;
-            this.buttonDelete1.Location = new System.Drawing.Point(351, 461);
+            this.buttonDelete1.Location = new System.Drawing.Point(632, 461);
             this.buttonDelete1.Margin = new System.Windows.Forms.Padding(5);
             this.buttonDelete1.Name = "buttonDelete1";
             this.buttonDelete1.Size = new System.Drawing.Size(121, 45);
@@ -903,7 +904,7 @@
             // buttonSave1
             // 
             this.buttonSave1.Enabled = false;
-            this.buttonSave1.Location = new System.Drawing.Point(105, 461);
+            this.buttonSave1.Location = new System.Drawing.Point(501, 461);
             this.buttonSave1.Margin = new System.Windows.Forms.Padding(5);
             this.buttonSave1.Name = "buttonSave1";
             this.buttonSave1.Size = new System.Drawing.Size(121, 45);
@@ -915,7 +916,7 @@
             // buttonFalse
             // 
             this.buttonFalse.Enabled = false;
-            this.buttonFalse.Location = new System.Drawing.Point(447, 395);
+            this.buttonFalse.Location = new System.Drawing.Point(370, 459);
             this.buttonFalse.Margin = new System.Windows.Forms.Padding(5);
             this.buttonFalse.Name = "buttonFalse";
             this.buttonFalse.Size = new System.Drawing.Size(121, 49);
@@ -927,7 +928,7 @@
             // buttonTrue
             // 
             this.buttonTrue.Enabled = false;
-            this.buttonTrue.Location = new System.Drawing.Point(38, 395);
+            this.buttonTrue.Location = new System.Drawing.Point(246, 459);
             this.buttonTrue.Margin = new System.Windows.Forms.Padding(5);
             this.buttonTrue.Name = "buttonTrue";
             this.buttonTrue.Size = new System.Drawing.Size(114, 49);
@@ -939,7 +940,7 @@
             // buttonShowAnswer
             // 
             this.buttonShowAnswer.Enabled = false;
-            this.buttonShowAnswer.Location = new System.Drawing.Point(195, 395);
+            this.buttonShowAnswer.Location = new System.Drawing.Point(38, 459);
             this.buttonShowAnswer.Margin = new System.Windows.Forms.Padding(5);
             this.buttonShowAnswer.Name = "buttonShowAnswer";
             this.buttonShowAnswer.Size = new System.Drawing.Size(198, 49);
@@ -963,15 +964,15 @@
             this.textBoxAnswer.AcceptsReturn = true;
             this.textBoxAnswer.Enabled = false;
             this.textBoxAnswer.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBoxAnswer.Location = new System.Drawing.Point(107, 247);
+            this.textBoxAnswer.Location = new System.Drawing.Point(107, 257);
             this.textBoxAnswer.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxAnswer.Multiline = true;
             this.textBoxAnswer.Name = "textBoxAnswer";
             this.textBoxAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxAnswer.Size = new System.Drawing.Size(435, 126);
+            this.textBoxAnswer.Size = new System.Drawing.Size(913, 192);
             this.textBoxAnswer.TabIndex = 10;
-            this.textBoxAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             this.textBoxAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             // 
             // label9
             // 
@@ -988,15 +989,15 @@
             this.textBoxQuestion.AcceptsReturn = true;
             this.textBoxQuestion.Enabled = false;
             this.textBoxQuestion.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQuestion.Location = new System.Drawing.Point(107, 105);
+            this.textBoxQuestion.Location = new System.Drawing.Point(107, 84);
             this.textBoxQuestion.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxQuestion.Multiline = true;
             this.textBoxQuestion.Name = "textBoxQuestion";
             this.textBoxQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxQuestion.Size = new System.Drawing.Size(435, 126);
+            this.textBoxQuestion.Size = new System.Drawing.Size(913, 163);
             this.textBoxQuestion.TabIndex = 8;
-            this.textBoxQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             this.textBoxQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             // 
             // labelRegDate
             // 
@@ -1067,7 +1068,7 @@
             this.tabPageSearch.Margin = new System.Windows.Forms.Padding(5);
             this.tabPageSearch.Name = "tabPageSearch";
             this.tabPageSearch.Padding = new System.Windows.Forms.Padding(5);
-            this.tabPageSearch.Size = new System.Drawing.Size(607, 554);
+            this.tabPageSearch.Size = new System.Drawing.Size(1030, 554);
             this.tabPageSearch.TabIndex = 2;
             this.tabPageSearch.Text = "Search";
             this.tabPageSearch.UseVisualStyleBackColor = true;
@@ -1151,15 +1152,15 @@
             this.textBoxSearchAnswer.AcceptsReturn = true;
             this.textBoxSearchAnswer.Enabled = false;
             this.textBoxSearchAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchAnswer.Location = new System.Drawing.Point(307, 333);
+            this.textBoxSearchAnswer.Location = new System.Drawing.Point(529, 333);
             this.textBoxSearchAnswer.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxSearchAnswer.Multiline = true;
             this.textBoxSearchAnswer.Name = "textBoxSearchAnswer";
             this.textBoxSearchAnswer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxSearchAnswer.Size = new System.Drawing.Size(281, 141);
+            this.textBoxSearchAnswer.Size = new System.Drawing.Size(491, 141);
             this.textBoxSearchAnswer.TabIndex = 7;
-            this.textBoxSearchAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             this.textBoxSearchAnswer.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxSearchAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             // 
             // textBoxSearchQuestion
             // 
@@ -1171,10 +1172,11 @@
             this.textBoxSearchQuestion.Multiline = true;
             this.textBoxSearchQuestion.Name = "textBoxSearchQuestion";
             this.textBoxSearchQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxSearchQuestion.Size = new System.Drawing.Size(279, 141);
+            this.textBoxSearchQuestion.Size = new System.Drawing.Size(491, 141);
             this.textBoxSearchQuestion.TabIndex = 6;
-            this.textBoxSearchQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
+            this.textBoxSearchQuestion.TextChanged += new System.EventHandler(this.TextBoxSearchQuestion_TextChanged);
             this.textBoxSearchQuestion.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxSearchQuestion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxKeyDown);
             // 
             // label1Search
             // 
@@ -1258,7 +1260,7 @@
             this.tabPageStatistics.Margin = new System.Windows.Forms.Padding(5);
             this.tabPageStatistics.Name = "tabPageStatistics";
             this.tabPageStatistics.Padding = new System.Windows.Forms.Padding(5);
-            this.tabPageStatistics.Size = new System.Drawing.Size(607, 554);
+            this.tabPageStatistics.Size = new System.Drawing.Size(1030, 554);
             this.tabPageStatistics.TabIndex = 3;
             this.tabPageStatistics.Text = "Statistics";
             this.tabPageStatistics.UseVisualStyleBackColor = true;
@@ -1883,7 +1885,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 643);
+            this.ClientSize = new System.Drawing.Size(1464, 643);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1900,6 +1902,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

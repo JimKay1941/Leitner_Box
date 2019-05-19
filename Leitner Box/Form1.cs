@@ -252,7 +252,7 @@ namespace Leitner_Box
             int i = 1;
             foreach (var question in questions)
             {
-                treeView1.Nodes[0].Nodes.Add("Word" + question.Attribute("ID").Value, "Question " + i.ToString(), 3, 3);
+                treeView1.Nodes[0].Nodes.Add("Word" + question.Attribute("ID").Value, "Question " + question.Attribute("ID").Value, 3, 3);
                 i++;
             }
         }
@@ -281,7 +281,7 @@ namespace Leitner_Box
                     int g = 1;
                     foreach (var question in partQuestions)
                     {
-                        treeView1.Nodes[i].Nodes[k - 1].Nodes.Add("Word" + question.Attribute("ID").Value, "Question " + g.ToString(), 3, 3);
+                        treeView1.Nodes[i].Nodes[k - 1].Nodes.Add("Word" + question.Attribute("ID").Value, "Question " + question.Attribute("ID").Value, 3, 3);
                         g++;
                     }
                 }
@@ -403,7 +403,7 @@ namespace Leitner_Box
         /// <summary>
         /// Adds an element to the xml file
         /// </summary>
-        private bool addToXMLAndTreeView(string boxID, string partID, string newQuestion, string newAnswer, string date, bool selectDestinationTreeNode)
+        private bool addToXMLAndTreeView(string boxID, string partID, string wordID, string newQuestion, string newAnswer, string date, bool selectDestinationTreeNode)
         {
             try
             {
@@ -446,7 +446,7 @@ namespace Leitner_Box
                 maxID++;
 
                 destinationBox.Add(
-                        new XElement("Word", new XAttribute("ID", maxID),
+                        new XElement("Word", new XAttribute("ID", wordID),
                             new XAttribute("Question", newQuestion),
                             new XAttribute("Answer", newAnswer),
                             new XAttribute("Date", date))
@@ -457,12 +457,12 @@ namespace Leitner_Box
                 if (boxID == "1")
                 {
                     destinationTreeNode = treeView1.Nodes.Find("Box1", false).First();
-                    destinationTreeNode.Nodes.Add("Word" + maxID, "Question " + (destinationTreeNode.Nodes.Count + 1).ToString(), 3, 3);
+                    destinationTreeNode.Nodes.Add("Word" + wordID, "Question " + wordID, 3, 3);
                 }
                 else if (boxID != "DataBase")
                 {
                     destinationTreeNode = treeView1.Nodes.Find("Box" + boxID + "Part" + partID, true).First();
-                    destinationTreeNode.Nodes.Add("Word" + maxID, "Question " + (destinationTreeNode.Nodes.Count + 1).ToString(), 3, 3);
+                    destinationTreeNode.Nodes.Add("Word" + wordID, "Question " + wordID, 3, 3);
                 }
                 //\\
                 try
@@ -470,7 +470,7 @@ namespace Leitner_Box
                     if (selectDestinationTreeNode && destinationTreeNode != null && boxID != "DataBase")
                     {
                         treeView1.CollapseAll();
-                        treeView1.SelectedNode = treeView1.Nodes.Find("Word" + maxID, true).First();
+                        treeView1.SelectedNode = treeView1.Nodes.Find("Word" + wordID, true).First();
                     }
                 }
                 catch { }
@@ -647,7 +647,16 @@ namespace Leitner_Box
                 }
                 catch { }
 
-                if (!addToXMLAndTreeView(boxID, partID, textBoxNewQuestion.Text.Trim(), textBoxNewAnswer.Text.Trim(), DateTime.Now.ToString().Replace("ب.ظ", "PM").Replace("ق.ظ", "AM"), true))
+                int maxID = 0;
+                try
+                {
+                    maxID = (from q in Variables.xDocument.Descendants("Word")
+                        select (int)q.Attribute("ID")).Max();
+                }
+                catch { }
+                maxID++;
+
+                if (!addToXMLAndTreeView(boxID, partID, maxID.ToString(), textBoxNewQuestion.Text.Trim(), textBoxNewAnswer.Text.Trim(), DateTime.Now.ToString().Replace("ب.ظ", "PM").Replace("ق.ظ", "AM"), true))
                 {
                     labelAddQuestionMessage.Text = @"Error in adding data to XML file";
                     return;
@@ -671,6 +680,7 @@ namespace Leitner_Box
         {
             try
             {
+                if (!textBoxAnswer.Enabled) return;
                 if (MessageBox.Show(@"Are you sure ?", @"Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 
                 string question = this.selectedElement.Attribute(@"Question").Value;
@@ -695,6 +705,7 @@ namespace Leitner_Box
         {
             try
             {
+                if (!textBoxAnswer.Enabled) return;
                 labelAnswerToQuestionMessage.Text = "";
 
                 ////////////////////////////////////
@@ -730,8 +741,9 @@ namespace Leitner_Box
         {
             try
             {
+                if (!textBoxAnswer.Enabled) return;
                 labelAnswerToQuestionMessage.Text = "";
-                if (labelBoxID.Text == "1") return;
+                //if (labelBoxID.Text == "1") return;
 
                 string question = this.selectedElement.Attribute("Question").Value;
                 string answer = this.selectedElement.Attribute("Answer").Value;
@@ -752,7 +764,7 @@ namespace Leitner_Box
                 }
                 catch { }
                 deleteFromXMLAndTreeView(wordID);
-                addToXMLAndTreeView("1", "", question, answer, date, false);
+                addToXMLAndTreeView("1", "",wordID, question, answer, date, false);
 
                 labelAnswerToQuestionMessage.Text = @"The question moved to Box1";
             }
@@ -768,6 +780,7 @@ namespace Leitner_Box
         {
             try
             {
+                if (!textBoxAnswer.Enabled) return;
                 labelAnswerToQuestionMessage.Text = "";
                 if (labelPartID.Text != "" && labelPartID.Text != "1") return;
 
@@ -784,7 +797,7 @@ namespace Leitner_Box
                     //Moves the word to Box2 Part2
                     case "1":
                         boxID = "1";
-                        addToXMLAndTreeView("2", "2", question, answer, date, false);
+                        addToXMLAndTreeView("2", "2", wordID, question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
                         labelAnswerToQuestionMessage.Text = @"The question moved to Box2 Part2";
                         break;
@@ -792,28 +805,28 @@ namespace Leitner_Box
                     ////////////////////////////////
                     //Moves the word to Box3 Part5
                     case "2":
-                        addToXMLAndTreeView("3", "5", question, answer, date, false);
+                        addToXMLAndTreeView("3", "5", wordID, question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
                         labelAnswerToQuestionMessage.Text = @"The question moved to Box3 Part5";
                         break;
 
                     ////////////////////////////////
                     case "3":
-                        addToXMLAndTreeView("4", "8", question, answer, date, false);
+                        addToXMLAndTreeView("4", "8", wordID, question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
                         labelAnswerToQuestionMessage.Text = @"The question moved to Box4 Part8";
                         break;
 
                     ////////////////////////////////
                     case "4":
-                        addToXMLAndTreeView("5", "14", question, answer, date, false);
+                        addToXMLAndTreeView("5", "14", wordID, question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
                         labelAnswerToQuestionMessage.Text = @"The question moved to Box5 Part14";
                         break;
 
                     ////////////////////////////////
                     case "5":
-                        addToXMLAndTreeView("DataBase", "", question, answer, date, false);
+                        addToXMLAndTreeView("DataBase", "", wordID, question, answer, date, false);
                         deleteFromXMLAndTreeView(wordID);
                         labelAnswerToQuestionMessage.Text = @"The question moved to Data Base";
                         break;
@@ -874,7 +887,7 @@ namespace Leitner_Box
                 catch { }
                 try
                 {
-                    addToXMLAndTreeView("1", "", element.Attribute("Question").Value, element.Attribute("Answer").Value, element.Attribute("Date").Value, true);
+                    addToXMLAndTreeView("1", "", id, element.Attribute("Question").Value, element.Attribute("Answer").Value, element.Attribute("Date").Value, true);
                 }
                 catch { }
                 element.Remove();
@@ -1577,7 +1590,7 @@ namespace Leitner_Box
             this.selectedElement.Remove();
             treeView1.Nodes.Find("Word" + id, true).First().Remove();
 
-            addToXMLAndTreeView(boxID, partID, question, answer, date, true);
+            addToXMLAndTreeView(boxID, partID, id, question, answer, date, true);
 
             if (boxID == "1")
                 labelAddQuestionMessage.Text = "The word moved to Box 1 successfully";
@@ -1748,6 +1761,11 @@ namespace Leitner_Box
         private void textBoxNewQuestion_Or_NewAnswer_Leave(object sender, EventArgs e)
         {
             listBoxAutoComplete.Visible = false;
+        }
+
+        private void TextBoxSearchQuestion_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
